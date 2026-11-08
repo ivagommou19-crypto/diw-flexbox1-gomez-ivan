@@ -1,0 +1,98 @@
+/*
+    Cabecera, pie, titulos, boton principal: #12355b
+    Fondo de pagina: #f4f6f9
+    Fondo de tarjetas: #ffffff
+    Texto: #1b1b1b
+    Texto de ayuda: #4a5568
+    Borde de controles: #5b6b7f
+    Borde de tarjetas: #b7c0cc
+    Campo inválido: #63261e
+    Foco: #0a5bd3 (y #ffd166 sobre fondo oscuro)
+*/
+
+
+body {
+    margin: 0px;
+    background-color: #f4f6f9;
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.cabecera{
+    display: flex;
+    color: white;
+    font-weight: bold;
+    background-color: #12355b;
+    justify-content: space-between;
+}
+
+.menu__lista {
+    display: flex;
+    list-style: none;
+    gap: 1.5em;
+}
+
+.menu__enlace {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+}
+
+.menu__enlace:hover {
+    text-decoration: underline;
+}
+
+.menu__enlace[aria-current="page"] {
+    font-weight: bold;
+    border-bottom: solid 2px yellow;
+    text-decoration: none;
+}
+
+main {
+    color: #12355b;
+    flex: 1;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.pie {
+    display: flex;
+    background-color: #12355b;
+    color: white;
+    justify-content: space-between;
+}
+
+
+.pie__lista {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.pie__texto, .pie__enlace {
+    font-size: 0.85em;
+}
+
+.pie__enlace {
+    text-decoration: underline;
+    color: white;
+}
+
+.cabecera p, .cabecera nav, .pie p, .pie nav {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
